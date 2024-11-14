@@ -1,18 +1,117 @@
+@import url('./css/clash-display.css');
+
 :root {
+    --bg-color: #111111;
+    --text-color: #aeac92;
+    --txt-clr-secondary: #efefef;
+    --accent-color: #ff5800;
+
     box-sizing: border-box;
     margin: 0;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+.content,
+.info,
+.container,
+.login,
+form {
+    padding: 0 24px;
+}
+
+h1 {
+    font-family: "ClashDisplay-Bold", sans-serif;
+    color: var(--txt-clr-secondary);
+    font-size: 3rem;
+}
+
+p {
+    font-family: "ClashDisplay-Regular", Sans-serif;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+a:hover {
+    color: #ff8c00;
+}
+
+/* image and logo styling */
 .bg-image {
     height: 100vh;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-image: url('./photos/Training.jpg');
-    background-size: contain;
-    background-position: left;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 70%;
+    padding-top: 7.5rem;
+}
+
+/* form styling */
+label,
+input {
+    font: 0.75rem "ClashDisplay-Regular", sans-serif;  
+}
+
+label {
+    font-family: "ClashDisplay-Regular", sans-serif;
+    font-size: 0.75rem;
+    color: var(--txt-clr-secondary);
+    text-transform: uppercase;
+}
+
+form {
+    background-color: #1e1e1d;
+    padding: 2rem 1.5rem;
+}
+
+
+/* button styling */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background: var(--accent-color);
+    color: var(--txt-clr-secondary);
+    font-family: "ClashDisplay-Bold";
+    letter-spacing: 0.05rem;
+}
+
+.container {
+    padding-top: 2rem;
+}
+
+button:hover {
+    background: #ff8c00;
+    cursor: pointer;
+}
+
+.login {
+    font-size: 1rem;
+}
