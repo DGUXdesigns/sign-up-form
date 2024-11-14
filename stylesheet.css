@@ -1,0 +1,18 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.bg-image {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('./photos/Training.jpg');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
