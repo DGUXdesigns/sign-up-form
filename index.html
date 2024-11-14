@@ -18,11 +18,40 @@
         <p>Sign up today and access exclusive workout plans!</p>
 
         <form>
-            <p>
-                <label for="first-name">
-                    First Name:<input type="text" id="first-name" name="user-first-name">
-                </label>
-            </p>
+            <div>
+                <label for="first-name">Name</label>
+            </div>
+            <input type="text" id="first-name" name="user-first-name">
+
+            <div>
+                <label for="last-name">Last Name</label>
+            </div>
+            <input type="text" name="user-last-name" id="last-name">
+            
+            <div>
+                <label for="email">Email</label>
+            </div>
+            <input type="email" name="user-email" id="email">
+
+            <div>
+                <label for="phone-number">Phone Number</label>
+            </div>
+            <input type="number" name="user-number" id="phone-number">
+
+            <div>
+                <label for="password">Password</label>
+            </div>
+            <input type="password" name="user-password" id="password">
+
+            <div>
+                <label for="confirm-password">Confirm Password</label>
+            </div>
+            <input type="password" name="confirm-password" id="confirm-password">
+            
+            <div>
+                <label for="terms">Agree to Terms and Conditions</label>
+                <input type="checkbox" name="agree" id="terms">
+            </div>
         </form>
     </div>
 </body>
