@@ -1,13 +1,18 @@
 @import url('./css/clash-display.css');
 
+/* global styles */
 :root {
     --bg-color: #1e1e1d;
     --text-color: #aeac92;
     --txt-clr-secondary: #efefef;
     --accent-color: #ff5800;
+    --invalid-color: #ff0000;
 
     box-sizing: border-box;
     margin: 0;
+    font-family: "ClashDisplay-Regular", sans-serif;
+    letter-spacing: 0.0875rem;
+    color: var(--txt-clr-secondary);
 }
 
 body {
@@ -22,10 +27,11 @@ body {
 
 .content,
 .info,
-.container,
 .login,
-form {
-    padding: 0 24px;
+.input-field,
+h2,
+.btn-container {
+    padding: 0 48px;
 }
 
 h1 {
@@ -41,6 +47,7 @@ p {
     max-width: 65ch;
 }
 
+/* Links */
 a {
     text-decoration: none;
     color: var(--accent-color);
@@ -50,27 +57,32 @@ a:hover {
     color: #ff8c00;
 }
 
-/* image and logo styling */
+/* left side content*/
 .bg-image {
     height: 100vh;
     width: 30%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 1rem;
     background-image: url('./photos/Training.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* Right side content */
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
     width: 70%;
+}
+
+.info {
+    padding-bottom: 3rem;
 }
 
 /* form styling */
@@ -83,12 +95,14 @@ input {
 .form-input {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 48%;
 }
 
-.form-input > input {
-    width: 100%;
-    max-width: 300px;
+.input-field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2%;
+    max-width: 800px;
 }
 
 label {
@@ -98,16 +112,15 @@ label {
 }
 
 form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem 1.5rem;
-    align-items: start;
-    background-color: #111111;
-    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper {
+    background: #111111;
 }
 
 input {
-    background-color: #111111;
     height: 28px;
     border: 1px solid #31302b;
     border-radius: 8px;
@@ -116,20 +129,24 @@ input {
     padding-left: 0.75rem;
 }
 
+input:invalid {
+    border: 1px solid var(--invalid-color);
+}
+
 .terms {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    padding: 0.5rem 0;
 }
 
 .t-and-c {
     text-transform: none;
 }
 
-
 /* button styling */
 button {
-    padding: 8px 16px;
+    padding: 0.75rem 2rem;
     border: none;
     border-radius: 4px;
     background: var(--accent-color);
@@ -143,7 +160,7 @@ button:hover {
     cursor: pointer;
 }
 
-.container {
+.btn-container {
     padding-top: 2rem;
 }
 

@@ -9,7 +9,7 @@
 
 <body>
     <div class="bg-image">
-        <!-- <img src="./photos/Arm.svg" class="logo"> -->
+        <img src="./photos/Weight.svg">
         <h1>SkyCast Fitness</h1>
     </div>
     <div class="main">
@@ -22,48 +22,53 @@
         </div>
 
         <form>
-            <div class="form-input">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="user-first-name">
-            </div> 
-
-            <div class="form-input">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="user-last-name" id="last-name">
-            </div>  
-
-            <div class="form-input">
-                <label for="email">Email</label>
-                <input type="email" name="user-email" id="email">
-            </div>
-
-            <div class="form-input">
-                <label for="phone-number">Phone Number</label>
-                <input type="number" name="user-number" id="phone-number">
-            </div> 
-
-            <div class="form-input">
-                <label for="password">Password</label>
-                <input type="password" name="user-password" id="password">
-            </div>
-
-            <div class="form-input">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirm-password">
-            </div>
-
-            <div class="terms">
-                <label for="terms" class="t-and-c">Agree to Terms and Conditions</label>
-                <input type="checkbox" name="agree" id="terms">
-            </div>
-
+            <div class="form-wrapper">
+                <h2>Get started Today!</h2>
             
+                <div class="input-field">
+                    <div class="form-input">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="user-first-name">
+                    </div> 
+
+                    <div class="form-input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="user-last-name" id="last-name">
+                    </div>  
+
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="email" name="user-email" id="email">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="telephone">Phone Number</label>
+                        <input type="text" name="tel" id="telephone" pattern="[0-9]{10}">
+                    </div> 
+
+                    <div class="form-input">
+                        <label for="password">Password</label>
+                        <input type="password" name="user-password" id="password">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
+
+                    <div class="terms">
+                        <label for="terms" class="t-and-c">Agree to Terms & Conditions</label>
+                        <input type="checkbox" name="agree" id="terms">
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit">Create Account</button>
+            </div>
+         
         </form>
         
-        <div class="container">
-            <button type="submit">Create Account</button>
-        </div>
-
         <p class="login">Already have an account? <a href="#">Log in</a></p>
     </div>
 </body>
