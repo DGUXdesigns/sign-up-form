@@ -1,7 +1,7 @@
 @import url('./css/clash-display.css');
 
 :root {
-    --bg-color: #111111;
+    --bg-color: #1e1e1d;
     --text-color: #aeac92;
     --txt-clr-secondary: #efefef;
     --accent-color: #ff5800;
@@ -38,6 +38,7 @@ p {
     font-family: "ClashDisplay-Regular", Sans-serif;
     font-size: 1.25rem;
     color: var(--text-color);
+    max-width: 65ch;
 }
 
 a {
@@ -67,28 +68,62 @@ a:hover {
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
     width: 70%;
-    padding-top: 7.5rem;
 }
 
 /* form styling */
 label,
 input {
-    font: 0.75rem "ClashDisplay-Regular", sans-serif;  
+    font: 0.75rem "ClashDisplay-Regular", sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-input > input {
+    width: 100%;
+    max-width: 300px;
 }
 
 label {
-    font-family: "ClashDisplay-Regular", sans-serif;
-    font-size: 0.75rem;
+    min-width: 90px;
     color: var(--txt-clr-secondary);
     text-transform: uppercase;
 }
 
 form {
-    background-color: #1e1e1d;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.5rem;
+    align-items: start;
+    background-color: #111111;
     padding: 2rem 1.5rem;
+}
+
+input {
+    background-color: #111111;
+    height: 28px;
+    border: 1px solid #31302b;
+    border-radius: 8px;
+    background: rgba(174, 172, 146, 0.20);
+    color: var(--text-color);
+    padding-left: 0.75rem;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.t-and-c {
+    text-transform: none;
 }
 
 
@@ -103,15 +138,18 @@ button {
     letter-spacing: 0.05rem;
 }
 
-.container {
-    padding-top: 2rem;
-}
-
 button:hover {
     background: #ff8c00;
     cursor: pointer;
 }
 
+.container {
+    padding-top: 2rem;
+}
+
 .login {
     font-size: 1rem;
+    color: var(--txt-clr-secondary);
+    letter-spacing: 0.05rem;
+    text-transform: none;
 }

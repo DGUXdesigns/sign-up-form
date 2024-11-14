@@ -22,40 +22,42 @@
         </div>
 
         <form>
-            <div>
+            <div class="form-input">
                 <label for="first-name">First Name</label>
-            </div>
-            <input type="text" id="first-name" name="user-first-name">
+                <input type="text" id="first-name" name="user-first-name">
+            </div> 
 
-            <div>
+            <div class="form-input">
                 <label for="last-name">Last Name</label>
-            </div>
-            <input type="text" name="user-last-name" id="last-name">
-            
-            <div>
+                <input type="text" name="user-last-name" id="last-name">
+            </div>  
+
+            <div class="form-input">
                 <label for="email">Email</label>
+                <input type="email" name="user-email" id="email">
             </div>
-            <input type="email" name="user-email" id="email">
 
-            <div>
+            <div class="form-input">
                 <label for="phone-number">Phone Number</label>
-            </div>
-            <input type="number" name="user-number" id="phone-number">
+                <input type="number" name="user-number" id="phone-number">
+            </div> 
 
-            <div>
+            <div class="form-input">
                 <label for="password">Password</label>
+                <input type="password" name="user-password" id="password">
             </div>
-            <input type="password" name="user-password" id="password">
 
-            <div>
+            <div class="form-input">
                 <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password">
             </div>
-            <input type="password" name="confirm-password" id="confirm-password">
-            
-            <div>
-                <label for="terms">Agree to Terms and Conditions</label>
+
+            <div class="terms">
+                <label for="terms" class="t-and-c">Agree to Terms and Conditions</label>
                 <input type="checkbox" name="agree" id="terms">
             </div>
+
+            
         </form>
         
         <div class="container">
