@@ -51,6 +51,7 @@ p {
 a {
     text-decoration: none;
     color: var(--accent-color);
+    transition-duration: 0.3s;
 }
 
 a:hover {
@@ -92,6 +93,25 @@ input {
     letter-spacing: 0.05rem;
 }
 
+input {
+    height: 28px;
+    border: 1px solid #31302b;
+    border-radius: 8px;
+    background: rgba(174, 172, 146, 0.20);
+    color: var(--text-color);
+    padding-left: 0.75rem;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+}
+
+input:invalid {
+    outline: none;
+    border: 1px solid var(--invalid-color);
+}
+
 .form-input {
     display: flex;
     flex-direction: column;
@@ -118,19 +138,7 @@ form {
 
 .form-wrapper {
     background: #111111;
-}
-
-input {
-    height: 28px;
-    border: 1px solid #31302b;
-    border-radius: 8px;
-    background: rgba(174, 172, 146, 0.20);
-    color: var(--text-color);
-    padding-left: 0.75rem;
-}
-
-input:invalid {
-    border: 1px solid var(--invalid-color);
+    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.25);
 }
 
 .terms {
@@ -142,17 +150,19 @@ input:invalid {
 
 .t-and-c {
     text-transform: none;
+    color: var(--text-color);
 }
 
 /* button styling */
 button {
     padding: 0.75rem 2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background: var(--accent-color);
     color: var(--txt-clr-secondary);
     font-family: "ClashDisplay-Bold";
     letter-spacing: 0.05rem;
+    transition-duration: 0.3s;
 }
 
 button:hover {
@@ -161,12 +171,12 @@ button:hover {
 }
 
 .btn-container {
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .login {
     font-size: 1rem;
-    color: var(--txt-clr-secondary);
+    color: var(--text-color);
     letter-spacing: 0.05rem;
     text-transform: none;
 }
