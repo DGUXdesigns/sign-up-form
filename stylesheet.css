@@ -144,15 +144,50 @@ form {
 /* custom checkbox */
 .terms {
     display: flex;
-    align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 0;
 }
 
 .t-and-c {
-    text-transform: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem; /* Space between text and checkbox */
+    text-align: left;
+    font-size: 0.9rem;
     color: var(--text-color);
+    text-transform: none;
 }
+
+/* Style for the custom checkbox */
+.custom-checkbox {
+    appearance: none; /* Remove default styles */
+    -webkit-appearance: none; /* Safari compatibility */
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid var(--text-color);
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    position: relative;
+}
+
+.custom-checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    left: 1px;
+    top: -1px;
+    color: var(--txt-clr-secondary);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 
 /* button styling */
 button {
